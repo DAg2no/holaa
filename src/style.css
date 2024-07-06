@@ -1,113 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-
-body{
-    font-family: Arial, sans-serif;
+  }
+  
+  body {
     background-color: #f3f3f3;
-}
-
-.navbar{
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     background-color: #000;
-    padding: 0 20px;
+    padding: 20px;
     height: 60px;
+    width: 100%;
     color: #fff;
-}
-
-.logo{
+  }
+  
+  .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-.nav-links{
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
-    li{
-        margin-left: 20px;
-    }
-
-    a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-    }
-}
-
-.drawer{
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .drawer {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    .bar{
-        
-        height: 3px;
-        width: 25px;
-        background-color: #fff;
-        margin: 4px 0;
-        transition: 0.3s;
-    }
-}
-
-.nav-links.active{
+  }
+  
+  .drawer .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  .nav-links.active {
     display: flex;
-}
-
-.btn{
+  }
+  
+  .btn {
     background-color: #07bcd4;
     color: #fff;
     padding: 7px;
     border: 0;
     border-radius: 5px;
-}
-.btn:hover{
+    cursor: pointer;
+  }
+  
+  .btn:hover {
     background-color: #00aabb;
-}
-
-.profile-header{
+  }
+  
+  header {
+    padding-top: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .profile-header {
     height: 150px;
     background-color: #00aabb;
-}
-
-.container{
+  }
+  
+  .column {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-1 {
+    flex: 1;
+  }
+  
+  .col-2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-3 {
+    flex: 3;
+  }
+  
+  .card-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: #fff;
     padding: 20px;
-    margin: -75px auto 0 auto;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.profile-img{
+  }
+  
+  .profile-img {
     margin-top: -75px;
     border: 5px solid #fff;
     border-radius: 50%;
     overflow: hidden;
     width: 150px;
     height: 150px;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.desc{
+  }
+  
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .desc {
     text-align: start;
     margin-top: 10px;
-}
-
-.edit-profile{
+  }
+  
+  .desc-1 {
+text-align: center;
+  }
+  
+  .edit-profile {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #ececed;
@@ -115,23 +159,33 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.edit-profile:hover{
+  }
+  
+  .edit-profile:hover {
     background-color: #b8babc;
-}
-
-@media (max-width: 768px){
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        li{
-            margin: 15px 0;
-        }
+  }
+  
+  .solicitudes-de-conexion {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
     }
-    .drawer{
-        display: flex;
+  
+    .nav-links li {
+      margin: 15px 0;
     }
-}
+  
+    .drawer {
+      display: flex;
+    }
+  }
+  
