@@ -58,9 +58,6 @@ body {
   transition: 0.3s;
 }
 
-.nav-links.active {
-  display: flex;
-}
 
 .btn {
   background-color: #07bcd4;
@@ -234,7 +231,7 @@ header {
 }
 
 .cross {
-  background-color: rgb(203, 22, 22);
+  background-color: #f0b8b8;
 }
 
 
@@ -255,13 +252,5 @@ header {
 
   .nav-links li {
     margin: 15px 0;
-  }
-
-  .drawer {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
   }
 }
